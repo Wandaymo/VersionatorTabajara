@@ -32,7 +32,7 @@ public class VersionatorTabajara {
                 out = out + " &&";
             }
         }
-        
+        out = out + "&& git checkout dev && git pull origin dev";
         JTextArea text = new JTextArea(out);
         JOptionPane.showMessageDialog(null, text, "Output", 1);
         System.out.println(out); 
